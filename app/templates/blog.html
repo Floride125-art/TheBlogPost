@@ -10,7 +10,7 @@ background-repeat: no-repeat; ">
         <div class="row justify-content-center">
             <div class="card col-md-8 m-3">
                 <div class="card-body">
-                    <h2 class="card-title p-1 text-center" style="background-color: #2D661B; color: aliceblue;">
+                    <h2 class="card-title p-1 text-center" style="background-color: #1a86b1; color: aliceblue;">
                         {{blog.title}}</h2>
                     <p>{{blog.post}}</p>
                     <p class="card-text">Posted by : {{blog.user.username}}
@@ -19,7 +19,7 @@ background-repeat: no-repeat; ">
                 {% if blog.user == current_user %}
                 <div class="card-footer text-muted">
                     <a class="btn text-light btn-sm m-1" href="{{url_for('main.updateblog',blog_id = blog.id)}}"
-                        style="background-color: #2A850E;">Edit
+                        style="background-color: #1685b1;">Edit
                         Post</a>
                     <a class="btn text-dark btn-sm m-1" data-toggle="modal" data-target="#modalConfirmDelete"
                         type="submit" style="background-color: #D0FFC2;">Delete Post</a>
